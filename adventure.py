@@ -1,8 +1,10 @@
 name = input("Type your name: ")
 print("Welcome", name, "to this adventure!")
 
+#Q1
 answer = input("You are on a dirt road, it has come to an end. Which way would you like to go? (Left or Right) ").lower()
 
+#Wrong
 if answer == "left":
     answer = input("You come to a river, you can walk around it or swim accross? (Swim or Walk) ")
 
@@ -13,6 +15,7 @@ if answer == "left":
     else:
         print('Not a valid option. You lose.')
 
+#Correct
 elif answer == "right":
     answer = input("You come to a bridge, it looks wobbly, do you want to cross it or head back (cross or back)? ").lower()
 
@@ -31,6 +34,8 @@ elif answer == "right":
         print('Not a valid option. You lose.')
 
 else:
-    print('Not a valid option. You lose.')
+    print('Not a valid option. Dumb and Lose.')
 
 print("Good Job not dying ", name, "!")
+
+#Very Basic, need to add more options and make it longer as time goes on. 
